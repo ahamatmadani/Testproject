@@ -1,20 +1,16 @@
-var entier;
-entier =10; // Formater le code
-console.log(typeof entier,entier);
+let resultat= 0;
+const firstNumber = 10;
+const secondNumber =20;
 
-var reel=10.45;
-console.log(typeof reel,reel);
+resultat = firstNumber + secondNumber;
 
-let chaineDeCaracteres = "Madani";
-console.log(typeof chaineDeCaracteres, chaineDeCaracteres);
 
-const PI =3.14;
-console.log(typeof PI, PI);
+//le resultat doit etre 30
 
-const OTHER_PI =22/7;
-console.log(typeof OTHER_PI, PI);
+console.log("la somme = "+resultat);
 
-const IS_TRAINER =true;
-console.log(typeof IS_TRAINER,IS_TRAINER);
-let numbers=[10, 3, 4, 45];
-console.log(typeof numbers,numbers);
+//le produit est egale a 200
+
+resultat =firstNumber*secondNumber;
+console.log("le produit =" +resultat);
+
