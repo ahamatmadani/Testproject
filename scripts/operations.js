@@ -1,5 +1,5 @@
 var entier;
-entier =10;
+entier =10; // Formater le code
 console.log(typeof entier,entier);
 
 var reel=10.45;
