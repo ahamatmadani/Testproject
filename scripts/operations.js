@@ -1,16 +1,19 @@
-let resultat= 0;
-const firstNumber = 10;
-const secondNumber =20;
-
-resultat = firstNumber + secondNumber;
+// Lire et Afficher le contenu de la balise H1
+const contentOfH1tags = document.getElementsByTagName("h1");
 
 
-//le resultat doit etre 30
 
-console.log("la somme = "+resultat);
+//Afficher le contenu sur le console
+console.log(contentOfH1tags);
 
-//le produit est egale a 200
+//contenu de la premiere balise h1
 
-resultat =firstNumber*secondNumber;
-console.log("le produit =" +resultat);
+const firstH1 = contentOfH1tags[0];
+console.log(firstH1.innerHTML);
 
+// Libelle le button
+
+const button = document.getElementById("Calculer");
+console.log(button);
+const buttonLabel = button.innerText;
+console.log(buttonLabel);
