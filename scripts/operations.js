@@ -1,19 +1,16 @@
-// Lire et Afficher le contenu de la balise H1
-const contentOfH1tags = document.getElementsByTagName("h1");
 
 
+// lire le contenu de la balise
 
-//Afficher le contenu sur le console
-console.log(contentOfH1tags);
+const contentsOfH1tags = document.getElementsByTagName("h1");
 
-//contenu de la premiere balise h1
+// afficher le contenu des balises h1
+console.log(contentsOfH1tags);
 
-const firstH1 = contentOfH1tags[0];
+const firstH1 = contentsOfH1tags[0];
 console.log(firstH1.innerHTML);
-
-// Libelle le button
-
-const button = document.getElementById("Calculer");
+// libelle le button
+const button = document.getElementById("calculer");
 console.log(button);
 const buttonLabel = button.innerText;
 console.log(buttonLabel);
