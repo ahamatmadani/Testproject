@@ -1,16 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>les operations</h1>
-    <div>
-         <button type="button" id="calculer">calculer</button>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>les operations</h1>
+
+      <form class="p-3 mb-2 bg-muted-success fg-success" onsubmit="calculer(event)">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom complet</label>
+          <input type="text" class="form-control" id="name" placeholder="Nom"/>
+        </div>
+        <div class="mb-3">
+          <label for="firstNumber" class="form-label">Premier Nombre</label>
+          <input type="number" class="form-control" id="firstNumber" />
+        </div>
+        <div class="mb-3">
+          <label for="secondNumber" class="form-label">Second Nombre</label>
+          <input type="number" class="form-control" id="secondNumber" />
+        </div>
+        <div class="mb-3">
+          <label for="operation" class="form-label" 
+            >Operation</label
+          >
+          <select class="form-control" id="operation">
+            <option >selectinner</option>
+            <option value="1">Addition</option>
+            <option value="2">Soustration</option>
+            <option value="3">Multiplication</option>
+            <option value="4">Division</option>
+            <option value="5">Modulo</option>
+          </select>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn-solid theme-primary">
+            calculer
+          </button>
+        </div>
+        <p id="result">resultat:</p>
+      </form>
     </div>
-   
-  <script src="scripts/operations.js"></script>
-</body>
+    <script src="scripts/operations.js"></script>
+  </body>
 </html>
